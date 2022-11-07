@@ -1,0 +1,347 @@
+/*SKITCH*/
+
+#evernote-popup-container #markupHeader {
+    margin: 21px 0 14px 0;
+}
+
+#evernote-popup-container #highlighter,
+#evernote-popup-container #marker {
+    margin-top: 0;
+}
+
+#evernote-popup-container .skitch_quintuple {
+    height: 35px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+
+    font-size: 0; /* fix obsolete extra-margin for children shown as inline-block */
+}
+
+#evernote-popup-container .skitch {
+    background-position: 50% 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    margin-right: 11px;
+    width: 35px;
+    box-sizing: border-box;
+}
+
+#evernote-popup-container .skitch:hover {
+    background-color: #21262c;
+}
+
+#evernote-popup-container .skitch:last-child {
+    margin-right: 0;
+}
+#evernote-popup-container .skitch.evn-active {
+    background-color: #21262C;
+    box-shadow: 0 1px #3C4449;
+}
+
+#evernote-popup-container .skitch:before,
+#evernote-popup-container .skitch:after {
+    pointer-events: none;
+    position: absolute;
+    transition: right 100ms cubic-bezier(0.25, 0.5, 0.5, 0.9), opacity 100ms cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+/* tooltips */
+
+#evernote-popup-container .skitch:before {
+    background-color: #ECECEC;
+    border: 1px solid #F4F4F4;
+    border-radius: 2px;
+    color: #707070;
+    content: attr(tooltip);
+    font: normal 12px/26px Verdana, Helvetica, Arial, sans-serif;
+    height: 26px;
+    padding: 0 6px;
+    top: 4px;
+    right: 88px;
+    text-shadow: 0 1px #FFFFFF;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    display: none;
+    z-index: 1;
+}
+#evernote-popup-container .skitch:after {
+    background-image: url('extension://images/tooltip_arrow.png');
+    background-repeat: no-repeat;
+    background-size: 10px 18px;
+    background-position: 0 0;
+    content: "";
+    height: 18px;
+    right: 78px;
+    top: 11px;
+    width: 10px;
+    z-index: 1;
+    display: none;
+}
+#evernote-popup-container .skitch.tooltipon:before,
+#evernote-popup-container .skitch.tooltipon:after {
+    display: inline-block;
+}
+#evernote-popup-container .skitch.tooltipon:before {
+    right: 48px;
+}
+#evernote-popup-container .skitch.tooltipon:after {
+    right: 38px;
+}
+
+/* tools */
+#evernote-popup-container .expandable {
+    background-size: auto auto, 7px 8px !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%, right bottom;
+}
+
+#evernote-popup-container .expandable#color {
+    background-size: 24px 24px, auto auto, 7px 8px !important;
+    background-repeat: no-repeat;
+    background-position: center, center 8px, right bottom;
+}
+
+#evernote-popup-container #highlighter {
+    background-image: url('extension://images/skitch/highlight_icon.png');
+}
+#evernote-popup-container #highlighter.deprecated {
+    background-image: url('extension://images/skitch/highlighter_deprecated.png');
+}
+#evernote-popup-container #marker {
+    background-image: url('extension://images/skitch/pen_icon.png');
+}
+#evernote-popup-container #arrow {
+    background-image: url('extension://images/skitch/arrow_icon.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #line {
+    background-image: url('extension://images/skitch/line.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #ellipse {
+    background-image: url('extension://images/skitch/ellipse.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #roundedRectangle {
+    background-image: url('extension://images/skitch/roundedRectangle.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #rectangle {
+    background-image: url('extension://images/skitch/rectangle.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #text {
+    background-image: url('extension://images/skitch/type_icon.png');
+}
+#evernote-popup-container #stampReject {
+    background-image: url('extension://images/skitch/stamp_x_icon.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #stampExclaim {
+    background-image: url('extension://images/skitch/stampExclaim.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #stampQuestion {
+    background-image: url('extension://images/skitch/stampQuestion.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #stampPerfect {
+    background-image: url('extension://images/skitch/stampPerfect.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #stampAccept {
+    background-image: url('extension://images/skitch/stampAccept.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #pixelate {
+    background-image: url('extension://images/skitch/pixelate_icon.png');
+}
+#evernote-popup-container #color[color="green"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_green.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="black"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_black.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="blue"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_blue.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="orange"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_orange.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="pink"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_pink.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="red"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_red.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="white"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_white.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #color[color="yellow"] {
+    background-image: url('extension://images/skitch/color_circle_icon.png'), url('extension://images/skitch/color_yellow.png'), url('extension://images/skitch/more_icon.png');
+}
+#evernote-popup-container #crop {
+    background-image: url('extension://images/skitch/crop_icon.png');
+}
+#evernote-popup-container #zoomout {
+    background-image: url('extension://images/skitch/zoom_out_icon.png');
+}
+#evernote-popup-container #zoomin {
+    background-image: url('extension://images/skitch/zoom_in_icon.png');
+}
+#evernote-popup-container .subtool[tool="arrow"] {
+    background-image: url('extension://images/skitch/arrow_color_icon.png');
+}
+#evernote-popup-container .subtool[tool="line"] {
+    background-image: url('extension://images/skitch/line_icon.png');
+}
+#evernote-popup-container .subtool[tool="ellipse"] {
+    background-image: url('extension://images/skitch/circle_icon.png');
+}
+#evernote-popup-container .subtool[tool="roundedRectangle"] {
+    background-image: url('extension://images/skitch/rectangle_round_icon.png');
+}
+#evernote-popup-container .subtool[tool="rectangle"] {
+    background-image: url('extension://images/skitch/rectangle_icon.png');
+}
+#evernote-popup-container .subtool[tool="stampReject"] {
+    background-image: url('extension://images/skitch/stamp_x_color_icon.png');
+}
+#evernote-popup-container .subtool[tool="stampExclaim"] {
+    background-image: url('extension://images/skitch/stamp_exclaim_color_icon.png');
+}
+#evernote-popup-container .subtool[tool="stampQuestion"] {
+    background-image: url('extension://images/skitch/stamp_question_color_icon.png');
+}
+#evernote-popup-container .subtool[tool="stampAccept"] {
+    background-image: url('extension://images/skitch/stamp_check_color_icon.png');
+}
+#evernote-popup-container .subtool[tool="stampPerfect"] {
+    background-image: url('extension://images/skitch/stamp_heart_color_icon.png');
+}
+#evernote-popup-container .subtool[tool="green"] {
+    background-image: url('extension://images/skitch/color_green.png');
+}
+#evernote-popup-container .subtool[tool="yellow"] {
+    background-image: url('extension://images/skitch/color_yellow.png');
+}
+#evernote-popup-container .subtool[tool="orange"] {
+    background-image: url('extension://images/skitch/color_orange.png');
+}
+#evernote-popup-container .subtool[tool="red"] {
+    background-image: url('extension://images/skitch/color_red.png');
+}
+#evernote-popup-container .subtool[tool="black"] {
+    background-image: url('extension://images/skitch/color_black.png');
+}
+#evernote-popup-container .subtool[tool="white"] {
+    background-image: url('extension://images/skitch/color_white.png');
+}
+#evernote-popup-container .subtool[tool="pink"] {
+    background-image: url('extension://images/skitch/color_pink.png');
+}
+#evernote-popup-container .subtool[tool="blue"] {
+    background-image: url('extension://images/skitch/color_blue.png');
+}
+
+/* subtools panels */
+
+#evernote-popup-container .subtool_panel .subtool {
+    background-position: center;
+    cursor: pointer;
+    display: inline-block;
+    height: 29px;
+    width: 40px;
+
+}
+
+#evernote-popup-container .subtool_panel {
+    box-sizing: border-box;
+    background-color: #31393F;
+    border-radius: 2px;
+    display: none;
+    padding: 0 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+#evernote-popup-container .shapes.subtool_panel {
+    width: 226px;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #bbcbd5;
+    position: absolute;
+    left: 23px;
+    margin-top: 9px;
+}
+
+#evernote-popup-container .shapes.subtool_panel:before {
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #bbcbd5;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 61px;
+    top: -7px;
+}
+
+#evernote-popup-container .stamps.subtool_panel {
+    width: 226px;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #bbcbd5;
+    position: absolute;
+    left: 23px;
+    margin-top: -76px;
+}
+
+#evernote-popup-container .stamps.subtool_panel:before {
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #bbcbd5;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 16px;
+    bottom: -7px;
+}
+
+#evernote-popup-container .colors.subtool_panel {
+    width: 184px;
+    height: 70px;
+    border-radius: 2px;
+    padding: 3px 0;
+    background-color: #bbcbd5;
+    position: absolute;
+    margin-top: -108px;
+    left: 66px;
+}
+
+#evernote-popup-container .colors.subtool_panel .subtool {
+    width:46px;
+    height: 32px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    /*margin-left: -3px;*/
+    background-position: center center;
+}
+
+#evernote-popup-container .colors.subtool_panel:before {
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #bbcbd5;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 109px;
+    bottom: -6px;
+}

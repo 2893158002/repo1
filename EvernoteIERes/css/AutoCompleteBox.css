@@ -1,0 +1,36 @@
+.evernote-autocomplete-panel
+{
+    position: absolute;
+    display: none;
+    z-index: 2147483647;
+    top: 30px;
+    left: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #D9D9D9;
+    width: 150px;
+}
+
+.evernote-autocomplete-panel .autocomplete-item
+{
+    padding: 5px 10px;
+    text-align: left;
+    font-family: Helvetica,serif !important;
+    font-size: 12px !important;
+    font-weight: normal;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.evernote-autocomplete-panel .autocomplete-item:hover,
+.evernote-autocomplete-panel .evernote-hover
+{
+    background-color: #3399FF !important;
+    color: white !important;
+}
+
+.evernote-autocomplete-panel .descendant-item
+{
+    background-color: #F5F5F5;
+}

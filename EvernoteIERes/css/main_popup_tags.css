@@ -1,0 +1,211 @@
+#evernote-popup-container .evernote-autocomplete-panel {
+    position: absolute;
+    display: none;
+    width: 182px;
+    top:30px;  /* will be overwritten by AutocompleteBox.js, showIfNeeded() */
+    left:54px;
+    padding: 5px 0;
+    color: #3F474C;
+    font-size: 13px;
+
+    background-color: #bbcbd5;
+    border-radius: 2px;
+}
+
+#evernote-popup-container .evernote-autocomplete-panel .evernote-autocomplete-container {
+    overflow: hidden;
+    max-height: 120px; /* this value is changed in AutocompleteBox.js*/
+}
+
+#evernote-popup-container .evernote-autocomplete-panel:before {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #bbcbd5;
+    font-size: 0;
+    content: "";
+    position: absolute;
+    line-height: 0;
+    left: 11px;
+    top:-6px;
+}
+
+
+#evernote-popup-container .evernote-autocomplete-panel .autocomplete-item {
+    text-align: left;
+    font-size:13px;
+    line-height: 22px;
+    font-family:Verdana !important;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 0 5px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: 182px;
+    height: 22px;
+}
+
+#evernote-popup-container .evernote-autocomplete-panel .autocomplete-item:hover,
+#evernote-popup-container .evernote-autocomplete-panel .evernote-hover {
+    color: #ffffff;
+    background-color: #4ca4e6;
+}
+
+/* tags input */
+#evernote-popup-container input.tags {
+    height: 24px;
+    padding: 0 8px !important;
+    width: 78px;
+    background-color: transparent !important;
+    margin: 0;
+    outline: none;
+    min-height: 0;
+    box-shadow: none;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius:22px;
+    border: 1px solid #8a9ca8 !important;
+    font-size:13px;
+    line-height: 22px;
+    font-family: Verdana;
+    color: #8a9ca8;
+    position: relative;
+    transition: 0.2s all ease;
+}
+
+#evernote-popup-container input.tags:focus,
+#evernote-popup-container input.tags:hover {
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+#evernote-popup-container input.tags:focus {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#evernote-popup-container input.tags::-ms-input-placeholder {
+    color: #3F474C;
+}
+
+#evernote-popup-container input.tags[disabled] {
+    border: 1px solid #8a9ca8 !important;
+    background-color: #8a9ca8 !important;
+    opacity: 1.0;
+    color: white;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+    width: 167px;
+}
+
+#evernote-popup-container .evn-tags-container {
+    background-repeat: no-repeat;
+    text-align: left;
+    border: 0 none #fafafa;
+    background-position: 12px 20px;
+    padding: 7px 10px 0 21px;
+}
+
+#evernote-popup-container .added-tags-container {
+    display:block;
+    overflow: auto;
+    height: inherit;
+    margin-top: 8px;
+}
+
+#evernote-popup-container .added-tags-container:empty {
+    height: 8px; /* IE fix (infinity height of tags container  in some cases after removing all tags) */
+    margin-top: 0;
+}
+
+#evernote-popup-container .tag .lozenge {
+    background-size: 9px 9px;
+    cursor: pointer;
+    height: 9px;
+    margin-left: 2px;
+    position: relative;
+    top: 1px;
+    visibility: hidden;
+    width: 9px;
+}
+
+#evernote-popup-container .tag > div > div {
+    display: inline-block;
+    overflow-x: hidden;
+    width: 83px;
+}
+
+#evernote-popup-container .tag > div > div:first-child {
+    text-overflow: ellipsis;
+}
+
+#evernote-popup-container .tag > div > div:last-child {
+    direction: rtl;
+}
+
+#evernote-popup-container .tag > div {
+    display: inline-block;
+    max-width: 174px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#evernote-popup-container .tag {
+    border-radius: 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin: 3px 3px 4px 3px;
+    padding: 0 3px 0 4px;
+}
+
+#evernote-popup-container .tag.gray {
+    background-color: #8B8E94;
+    border: 1px solid #66696E;
+}
+
+#evernote-popup-container .tag.hidden {
+    display: none;
+}
+
+#evernote-popup-container .tag:hover .lozenge {
+    visibility: visible;
+}
+
+#evernote-popup-container .evn-tags-container .evernote-added-tag-entry{
+    display: inline-block;
+    padding: 0 6px 0 10px;
+    background: #dde9ff no-repeat 98% 50%;
+    border-radius: 25px;
+    margin-right: 14px;
+    margin-bottom: 8px;
+    height:24px;
+    background-color: #8a9ca8;
+    box-sizing: border-box;
+}
+
+#evernote-popup-container .evn-tags-container .evernote-added-tag-entry .tag_text{
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 141px;
+    display: inline-block;
+    background-color: transparent;
+    font-size:13px;
+    line-height: 24px;
+    font-family: Verdana;
+    color: #2f373d;
+}
+
+#evernote-popup-container .evn-tags-container .evernote-added-tag-entry .evernote-close-button{
+    width: 14px;
+    height:100%;
+    cursor: pointer;
+    margin-left: 4px;
+    display: inline-block;
+    background-image: url('extension://images/delete_tag_icon.png');
+    background-position: 50%, 50%;
+}
+

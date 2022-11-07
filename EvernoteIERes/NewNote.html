@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script type="text/javascript" src="scripts/Evernote.js"></script>
+    <script type="text/javascript" src="scripts/addin/AddinCreator.js"></script>
+    <script type="text/javascript" src="scripts/EvernoteAsyncEngine.js"></script>
+    <script type="text/javascript" src="scripts/EvernoteAddin.js"></script>
+    <script type="text/javascript" src="scripts/loggers/FileLogger.js"></script>
+    <script type="text/javascript" src="scripts/loggers/ConsoleLogger.js"></script>
+    <script type="text/javascript" src="scripts/loggers/AlertLogger.js"></script>
+    <script type="text/javascript" src="scripts/loggers/LoggerConfigurator.js"></script>
+    <script type="text/javascript" src="scripts/BrowserDetection.js"></script>
+    <script type="text/javascript" src="scripts/IEVersion.js"></script>
+    <script type="text/javascript">
+        try {
+            var evernoteAddin;
+			try {
+				evernoteAddin = Evernote.AddinCreator.create(Evernote.IEVersion.getVersion());
+			} catch(e) {
+				alert("We cannot establish connection with Evernote application.\n" /
+						"Most likely you have \"Enhanced Protected Mode\" enabled.\n" /
+						"To enable Evernote Clipper please perform following steps:\n" /
+						"1. Navigate to Tools -> Internet Options -> Advanced\n" /
+						"2. In Security section unmark \"Enable Enhanced Protected Mode\"\n" /
+						"3. Save changes\n" /
+						"4. Restart Internet Explorer\n" /
+						"If it does not help, please submit support ticket at http:\/\/support.yinxiang.com");
+			}
+			if(evernoteAddin) {
+				Evernote.Addin.init(evernoteAddin);
+				Evernote.Logger = Evernote.LoggerConfigurator.getLogger();
+				Evernote.Addin.openNewNote();
+			}
+        } catch (e) {
+            Evernote.Logger.error("Failed to open new note window due to error: " + e);
+        }
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

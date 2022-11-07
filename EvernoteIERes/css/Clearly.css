@@ -1,0 +1,255 @@
+#evernoteClearlyArticle {
+    top: 0;
+    left: 0;
+    border: none;
+    height: 100%;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    visibility: visible;
+    position: absolute;
+    width: 100%;    
+}
+
+/* dynamic classes */
+#evernoteClearlyArticle.processing #box {
+    background-color: white;
+}
+#evernoteClearlyArticle.processing {
+    display: block;
+    background-color: transparent;
+}
+
+#evernoteClearlyArticle.temphidden {
+    display: none;
+    background-color: white;
+}
+
+#evernoteClearlyArticle.temphidden #box{
+    display: none;
+}
+
+#evernoteClearlyArticle.temphidden #background{
+    right: 100%;
+}
+
+#evernoteClearlyArticle.visible {
+    background-color: white;
+}
+
+#evernoteClearlyArticle.visible #box{
+    display: block;
+}
+
+/* end of dynamic classes*/
+
+#evernoteClearlyArticle #background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right:100%;
+}
+
+#evernoteClearlyArticle article,
+#evernoteClearlyArticle section {
+    background: none;
+}
+
+#evernoteClearlyArticle #box {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    background: none;
+    z-index: 3;
+}
+
+#evernoteClearlyArticle #box_inner {
+    padding-top: 70px;
+}
+
+#evernoteClearlyArticle #box #text,
+#evernoteClearlyArticle #box img {
+    max-width: 600px;
+}
+/* Highlight part*/
+/* selection */
+html.clearly_highlighting_enabled ::-moz-selection,
+html.clearly_highlighting_enabled ::selection {
+    background: rgba(246, 238, 150, 0.99);
+}
+
+/* cursor */
+html.clearly_highlighting_enabled {
+    /* cursor and hot-spot position -- requires a default cursor, after the URL one */
+    /*cursor: url('extension://images/clearly/highlight--cursor.png') 14 16, text;*/
+    cursor: col-resize;
+}
+
+/* highlight tag */
+em.clearly_highlight_element {
+    font-style: inherit !important;
+    font-weight: inherit !important;
+    background: rgba(246, 238, 150, 0.99);
+    background-image: url('extension://images/clearly/highlight--yellow.png');
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-size: 100% 100%;
+}
+/* the delete-buttons are positioned relative to this */
+em.clearly_highlight_element.clearly_highlight_first {
+    position: relative;
+}
+
+/* delete buttons */
+em.clearly_highlight_element a.clearly_highlight_delete_element {
+    display: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: -17px;
+    top: -17px;
+    background-image: url('extension://images/clearly/highlight--delete-sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;    
+}
+em.clearly_highlight_element a.clearly_highlight_delete_element:hover {
+    background-position: -34px 0;
+}
+
+
+/* content style NEWSPRINT */
+
+#evernoteClearlyArticle #body { font-family:  "PT Serif", "Times New Roman", sans-serif; font-size: 16px; line-height: 1.5em; color: #1f0909; text-align: left; }
+#evernoteClearlyArticle #background { background-color: #f3f2ee; }
+#evernoteClearlyArticle .setTextColorAsBackgroundColor { background-color: #1f0909; }
+#evernoteClearlyArticle .setBackgroundColorAsTextColor { color: #f3f2ee; }
+#evernoteClearlyArticle #box, #evernoteClearlyArticle .setBoxWidth { width: 36em; }
+#evernoteClearlyArticle a { color: #065588; }
+#evernoteClearlyArticle a:visited { color: #1f0909; }
+#evernoteClearlyArticle.footnote_links__always a, #evernoteClearlyArticle.footnote_links__always a:hover { color: #1f0909 !important; text-decoration: none !important; }
+#evernoteClearlyArticle img { border-color: #1f0909; }
+#evernoteClearlyArticle a img { border-color: #065588; }
+#evernoteClearlyArticle a:visited img { border-color: #1f0909; }
+#evernoteClearlyArticle h1 a, #evernoteClearlyArticle h2 a, #evernoteClearlyArticle a h1, #evernoteClearlyArticle a h2 { color: #1f0909; }
+#evernoteClearlyArticle h1, #evernoteClearlyArticle h2, #evernoteClearlyArticle h3, #evernoteClearlyArticle h4, #evernoteClearlyArticle h5, #evernoteClearlyArticle h6 { font-family: "PT Serif", "Times New Roman", sans-serif; }
+#evernoteClearlyArticle pre { background-color: #f3f2ee; }
+#evernoteClearlyArticle pre, #evernoteClearlyArticle code { font-family: Inconsolata; }
+#evernoteClearlyArticle hr { border-color: #1f0909; }
+#html.rtl #body #evernoteClearlyArticle { text-align: right !important; }
+#evernoteClearlyArticle h1, #evernoteClearlyArticle h2, #evernoteClearlyArticle h3, #evernoteClearlyArticle h4, #evernoteClearlyArticle h5, #evernoteClearlyArticle h6 { text-align: left; }
+#html.rtl h1, #html.rtl h2, #html.rtl h3, #html.rtl h4, #html.rtl h5, #html.rtl h6 { text-align: right !important; }
+#evernoteClearlyArticle #articleHeader { border-color: #c5c5c5; }
+#evernoteClearlyArticle #relatedNotes { border-color: rgba(197, 197, 197, 0.5); }
+#evernoteClearlyArticle blockquote { border-color: #bababa; color: #656565; }
+#evernoteClearlyArticle thead { background-color: #dadada; }
+#evernoteClearlyArticle hr { border-color: #c5c5c5; }
+
+
+
+/* headings */
+#evernoteClearlyArticle h1, #evernoteClearlyArticle h2, #evernoteClearlyArticle h3, #evernoteClearlyArticle h4, #evernoteClearlyArticle h5, #evernoteClearlyArticle h6 { font-weight: bold; background: none; color:#1f0909; padding: 0; }
+#evernoteClearlyArticle h1 { font-size: 1.875em; /*30 / 16*/ line-height: 1.6em; /* 48 / 30*/ }
+#evernoteClearlyArticle h2,
+#evernoteClearlyArticle h3 { font-size: 1.3125em; /*21 / 16*/ line-height: 1.15; /*24 / 21*/ margin-top: 2.285714em; /*48 / 21*/ margin-bottom: 1.15em; /*24 / 21*/ }
+#evernoteClearlyArticle h3 { font-weight: normal; }
+#evernoteClearlyArticle h4 { font-size: 1.125em;/*18 / 16*/ margin-top: 2.67em; /*48 / 18*/	}
+#evernoteClearlyArticle h5,
+#evernoteClearlyArticle h6 { font-size: 1em; /*16*/ }
+#evernoteClearlyArticle #articleHeader { border-bottom: 1px solid; margin-bottom: 1.875em;  padding-bottom: 0.8125em; }
+#evernoteClearlyArticle #relatedNotes { border-top: 1px solid; }
+
+/* links */
+#evernoteClearlyArticle a { text-decoration: none; }
+#evernoteClearlyArticle a:hover, #evernoteClearlyArticle a:active { text-decoration: underline; }
+
+/* block spacing */
+#evernoteClearlyArticle p, #evernoteClearlyArticle blockquote, #evernoteClearlyArticle #text div { margin-bottom: 1.5em; }
+#evernoteClearlyArticle h1, #evernoteClearlyArticle h2, #evernoteClearlyArticle h3, #evernoteClearlyArticle h4, #evernoteClearlyArticle h5, #evernoteClearlyArticle h6 { margin-bottom: 1.5em; }
+#evernoteClearlyArticle #text div.readableLargeImageContainer, #evernoteClearlyArticle #text div.readableLargeObjectContainer { margin-bottom: 1em; margin-top:1em; }
+
+/* blockquote */
+#evernoteClearlyArticle blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
+
+/* lists */
+#evernoteClearlyArticle ul, #evernoteClearlyArticle ol { margin: 0 0 1.5em 1.5em; }
+#evernoteClearlyArticle ol li { list-style-type: decimal; list-style-position: outside; }
+#evernoteClearlyArticle ul li { list-style-type: disc; list-style-position: outside; }
+
+/* tables */
+#evernoteClearlyArticle table { margin-bottom: 1.5em; /*24 / 16*/ font-size: 1em; /* width: 100%; */ }
+#evernoteClearlyArticle thead th, #evernoteClearlyArticle tfoot th { padding: .25em .25em .25em .4em; text-transform: uppercase; }
+#evernoteClearlyArticle th { text-align: left; }
+#evernoteClearlyArticle td { vertical-align: top; padding: .25em .25em .25em .4em; }
+
+/* formatting */
+#evernoteClearlyArticle em, #evernoteClearlyArticle i { font-style: italic; }
+#evernoteClearlyArticle strong, #evernoteClearlyArticle b { font-weight: bold; }
+
+/* preformatted */
+#evernoteClearlyArticle pre, #evernoteClearlyArticle code, #evernoteClearlyArticle tt { font-size: .875em; line-height: 1.714285em; }
+
+/* some fixes */
+#evernoteClearlyArticle h1 { line-height: 1.3em; font-weight: normal;  margin-bottom: 0.5em; }
+#evernoteClearlyArticle h1 + h2 { margin-top: .2em; margin-bottom: 2.15em; font-size: .875em; }
+#evernoteClearlyArticle p + ul, #evernoteClearlyArticle h2 + ul, #evernoteClearlyArticle p + ol, #evernoteClearlyArticle h2 + ol { margin-top:-1em; }
+#evernoteClearlyArticle h3 + ul, #evernoteClearlyArticle h4 + ul, #evernoteClearlyArticle h5 + ul, #evernoteClearlyArticle h6 + ul, #evernoteClearlyArticle h3 + ol, #evernoteClearlyArticle h4 + ol, #evernoteClearlyArticle h5 + ol, #evernoteClearlyArticle h6 + ol { margin-top: .5em; }
+#evernoteClearlyArticle h2, #evernoteClearlyArticle h3 { margin-bottom: .75em; }
+#evernoteClearlyArticle hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
+#evernoteClearlyArticle pre code, #evernoteClearlyArticle code pre { font-size: 1.15em; }
+
+/* All the same but without prefix id*/
+
+#evernoteClearlyArticle * { font-family: "PT Serif", "Times New Roman", sans-serif}
+
+#evernoteClearlyArticle h1,  #evernoteClearlyArticle h2,  #evernoteClearlyArticle h3,  #evernoteClearlyArticle h4,  #evernoteClearlyArticle h5,  #evernoteClearlyArticle h6 { font-weight: bold; }
+#evernoteClearlyArticle h1 { font-size: 1.875em; /*30 / 16*/ line-height: 1.6em; /* 48 / 30*/ }
+#evernoteClearlyArticle h2,  #evernoteClearlyArticle h3 { font-size: 1.3125em; /*21 / 16*/ line-height: 1.15; /*24 / 21*/ margin-top: 2.285714em; /*48 / 21*/ margin-bottom: 1.15em; /*24 / 21*/ }
+#evernoteClearlyArticle h3 { font-weight: normal; }
+#evernoteClearlyArticle h4 { font-size: 1.125em;/*18 / 16*/ margin-top: 2.67em; /*48 / 18*/	}
+#evernoteClearlyArticle h5,  #evernoteClearlyArticle h6 { font-size: 1em; /*16*/ }
+#evernoteClearlyArticle #articleHeader { border-bottom: 1px solid; margin-bottom: 1.875em;  padding-bottom: 0.8125em; }
+#evernoteClearlyArticle #relatedNotes { border-top: 1px solid; }
+
+/* links */
+#evernoteClearlyArticle a { text-decoration: none; }
+#evernoteClearlyArticle a:hover, #evernoteClearlyArticle a:active { text-decoration: underline; }
+
+/* block spacing */
+#evernoteClearlyArticle p,  #evernoteClearlyArticle blockquote,  #evernoteClearlyArticle #text div { margin-bottom: 1.5em; }
+#evernoteClearlyArticle h1,  #evernoteClearlyArticle h2,  #evernoteClearlyArticle h3,  #evernoteClearlyArticle h4,  #evernoteClearlyArticle h5,  #evernoteClearlyArticle h6 { margin-bottom: 1.5em; }
+#evernoteClearlyArticle #text div.readableLargeImageContainer,  #evernoteClearlyArticle #text div.readableLargeObjectContainer { margin-bottom: 1em; margin-top:1em; }
+
+/* blockquote */
+#evernoteClearlyArticle blockquote { font-style: italic; border-left: 5px solid; margin-left: 2em; padding-left: 1em; }
+
+/* lists */
+#evernoteClearlyArticle ul,  #evernoteClearlyArticle ol { margin: 0 0 1.5em 1.5em; }
+#evernoteClearlyArticle ol #evernoteClearlyArticle li { list-style-type: decimal; list-style-position: outside; }
+#evernoteClearlyArticle ul #evernoteClearlyArticle li { list-style-type: disc; list-style-position: outside; }
+
+/* tables */
+#evernoteClearlyArticle table { margin-bottom: 1.5em; /*24 / 16*/ font-size: 1em; /* width: 100%; */ }
+#evernoteClearlyArticle thead th,  #evernoteClearlyArticle tfoot th { padding: .25em .25em .25em .4em; text-transform: uppercase; }
+#evernoteClearlyArticle th { text-align: left; }
+#evernoteClearlyArticle td { vertical-align: top; padding: .25em .25em .25em .4em; }
+
+/* formatting */
+#evernoteClearlyArticle em,  #evernoteClearlyArticle i { font-style: italic; }
+#evernoteClearlyArticle strong,  #evernoteClearlyArticle b { font-weight: bold; }
+
+/* preformatted */
+#evernoteClearlyArticle pre,  #evernoteClearlyArticle code,  #evernoteClearlyArticle tt { font-size: .875em; line-height: 1.714285em; }
+
+/* some fixes */
+#evernoteClearlyArticle h1 { line-height: 1.3em; font-weight: normal;  margin-bottom: 0.5em; }
+#evernoteClearlyArticle h1 + h2 { margin-top: .2em; margin-bottom: 2.15em; font-size: .875em; }
+#evernoteClearlyArticle p + ul,  #evernoteClearlyArticle h2 + ul,  #evernoteClearlyArticle p + ol,  #evernoteClearlyArticle h2 + ol { margin-top:-1em; }
+#evernoteClearlyArticle h3 + ul,  #evernoteClearlyArticle h4 + ul,  #evernoteClearlyArticle h5 + ul,  #evernoteClearlyArticle h6 + ul,  #evernoteClearlyArticle h3 + ol, #evernoteClearlyArticle h4 + ol,  #evernoteClearlyArticle h5 + ol,  #evernoteClearlyArticle h6 + ol { margin-top: .5em; }
+#evernoteClearlyArticle h2,  #evernoteClearlyArticle h3 { margin-bottom: .75em; }
+#evernoteClearlyArticle hr { border-top: none; border-right: none; border-bottom: 1px solid; border-left: none; }
+#evernoteClearlyArticle pre code,  #evernoteClearlyArticle code pre { font-size: 1.15em; }
