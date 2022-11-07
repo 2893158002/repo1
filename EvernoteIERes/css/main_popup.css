@@ -1,0 +1,674 @@
+/*
+    html structure:
+
+    #evenote-content
+        .evernote-popupView yui3-cssreset  #evernote-popup-container
+            .evernote-screenshotPopup
+            .evernote-submitWithOptions
+
+*/
+
+@-ms-viewport { width: auto !important; }
+
+#evernote-content {
+    cursor: default;
+    -ms-user-select: none;
+    top:21px;
+    right: -10px;
+    min-height: 115px;
+    opacity: 0;
+    transition: 0.35s;
+    position: fixed;
+    background-color: #2f373d;
+    overflow: visible !important;
+    border: 2px solid rgba(178,186,193,0.6);
+    border-radius: 2px;    
+    /*transform: scale(1.5);*/
+}
+
+#evernote-content.visible {
+    /*transform: scale(1);*/
+    right: 21px;
+    opacity: 1;
+}
+
+#evernote-content ::selection {
+    /*background: rgba(51, 153, 255, 0.99);   default color*/
+    background: transparent;
+}
+
+#evernote-content.one-click-mode {
+   border: 2px solid #26B064;
+}
+
+#evernote-popup-container .evernote-submitWithOptions {
+    box-sizing: border-box;
+    padding: 10px 25px 50px;
+}
+
+#evernote-content.screenshotMode .evernote-submitWithOptions {
+    display: none;
+}
+
+#evernote-popup-container .hidden {
+    display: none !important;
+}
+#evernote-popup-container .visible {
+    display: block !important;
+}
+
+#evernote-popup-container * {
+    font-size: 12px;
+    line-height: normal;
+    background-repeat: no-repeat !important;
+}
+
+#evernote-popup-container {
+    width: 270px;
+    line-height: normal;
+}
+
+#evernoteErrorPopup .closeCross,
+#evernote-popup-container .closeCross {
+    background-image: url('extension://images/close_icon.png');
+    background-size: 14px 14px;
+    cursor: pointer;
+    height: 14px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 14px;
+}
+
+/* title for screenshot mode */
+#evernote-popup-container .evernote-screenshotPopup .noteTitle {
+    margin-bottom: 11px;
+    position: relative;
+    border-radius: 2px;
+    background: transparent;
+    text-align: left;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+    line-height: 25px;
+    overflow: hidden;
+    padding: 5px 9px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 50px;
+    border: 1px solid transparent;
+}
+
+/*main title*/
+
+#evernote-popup-container .evernote-note-title:hover,
+#evernote-popup-container .evernote-note-title textarea:focus{
+    background-color: #21262c;
+}
+
+#evernote-popup-container .evernote-note-title {
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 2px;
+}
+
+#evernote-popup-container .evernote-note-title .edit-tip {
+    display: none;
+    bottom: 5px;
+    right: 15px;
+    position: absolute;
+    font: normal 11px/26px Verdana, sans-serif;
+    color:#8a9ca8;
+}
+
+#evernote-popup-container .evernote-note-title textarea{
+    background: transparent;
+    text-align: left;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+    border: 1px solid #f5f5f5;
+}
+
+#evernote-popup-container .evernote-note-title pre span {
+    text-align: left;
+    font-style: italic;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+}
+
+#evernote-popup-container .evernote-note-title .expandingArea {
+    position: relative;
+}
+
+#evernote-popup-container .evernote-note-title .expandingArea pre,
+#evernote-popup-container .evernote-note-title .expandingArea textarea {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 5px 9px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#evernote-popup-container .evernote-note-title .expandingArea textarea {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+#evernote-popup-container .evernote-note-title .expandingArea pre {
+    min-height: 23px;
+    max-height: 45px;
+    visibility: hidden;
+    box-sizing: content-box;
+}
+
+#evernote-popup-container .evernote-note-title .expandingArea pre * {
+    line-height: 25px;
+}
+
+/* clipper options*/
+#evernote-popup-container .evn-header {
+    background: none !important;
+    position: relative;
+    margin: 14px 0 2px 0;
+    min-height: 8px;
+}
+
+#evernote-popup-container #clipHeader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#evernote-popup-container #fileHeader {
+    margin-top: 10px;
+}
+
+#evernote-popup-container .evn-header span {
+    background-color: #2F373D;
+    color: #8a9ca8;
+    font-family: Cambria, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    left: 26px;
+    float:none;
+    padding: 0 4px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+#evernote-popup-container .evn-header:before {
+    border-top: 1px solid #21262C;
+    border-bottom: 1px solid #495865;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+#evernote-popup-container .clipper {
+    color: #ffffff;
+    margin-left: 0;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-left: 30px;
+    position: relative;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    white-space: nowrap;
+    border-radius: 2px;
+    width: 196px;
+}
+
+#evernote-popup-container .clipper:hover {
+    background-color: #21262c;
+}
+
+#evernote-popup-container .clipper:before {
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 8px;
+    position: absolute;
+    top: 8px;
+}
+
+#evernote-popup-container .clipper:hover:before {
+    background-color: #8A9CA8;
+}
+
+#evernote-popup-container .clipper.evn-active:before {
+    background-color: #26B064;
+}
+
+#evernote-popup-container #userMenuDivider {
+    bottom: 39px;
+    width: 220px;
+    height: 0;
+}
+
+#evernote-popup-container .divider {
+    border-top: 1px solid #21262c;
+    border-bottom: 1px solid #495865;
+}
+
+/* save button */
+#evernote-popup-container  .evn-button {
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    line-height: 32px;
+    font-size: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    width: 220px;
+    height: 32px;
+    font-family: Verdana, sans-serif;
+}
+
+/* save button */
+#evernote-popup-container  #saveButton {
+    border-style: solid;
+    border-color: #26B064;
+    border-width: 1px;
+    background-color: #26B064;
+    box-shadow: inset 0 1px 0 0 #33CC78;
+    margin-bottom: 18px;
+}
+#evernote-popup-container  #saveButton:hover {
+    background-color: #33CC78;
+}
+#evernote-popup-container  #saveButton:active {
+    background-color: #26B064;
+    box-shadow: inset 0 0 8px 3px rgba(2, 52, 24, 0.3);
+}
+#evernote-popup-container  #saveButton.focused {
+    border-color: #39A0C0;
+}
+
+#evernote-popup-container .evn-inactive#saveButton {
+    background-color: #8a9ca8;
+    box-shadow: inset 0 1px 0 0 #8a9ca8;
+}
+
+/* cancel button */
+#evernote-popup-container  #cancelButton {
+    background-color: #8a98a2;
+    box-shadow: inset 0 1px 0 0 #b3c1cc;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.5);
+    width: 220px;
+    height: 32px;
+    margin-bottom: 15px;
+}
+
+#evernote-popup-container  #cancelButton:hover {
+    background-color: #b3c1cc;
+}
+
+/* bottom part of sidebar */
+#evernote-popup-container .bottom {
+    position: absolute;
+}
+
+
+#evernote-content .evernote-screenshotPopup {
+    padding: 10px 25px;
+    display: none;
+}
+
+#evernote-content.screenshotMode .evernote-screenshotPopup {
+    display: block;
+}
+
+#evernote-popup-container .evernote-footer {
+    bottom: 0;
+}
+
+#evernote-popup-container .evernote-footer .options {
+    padding-left: 30px;
+    width: 220px;
+    line-height: 38px;
+    background-image: url('extension://images/settings_icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+}
+
+#evernote-popup-container .evernote-footer .options-link:hover {
+    color: white;
+}
+
+#evernote-popup-container .evernote-footer .options-link {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    line-height: 38px;
+    cursor: pointer;
+    color: #8a9ca8;
+    text-shadow: 0 1px 2px rgba(00,00,00,0.6);
+}
+
+#evernote-popup-container #evn-main-notebook {
+    border-radius: 2px;
+    color: #e1e1e1;
+    cursor: pointer;
+    font-family: Cambria, sans-serif;
+    font-size: 13px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    overflow: hidden;
+    background-position:0 50%;
+    background-image: url('extension://images/notebook_icon.png'); /*default icon is better than no icon*/
+}
+
+#evernote-popup-container #evn-main-notebook.loading {
+    background-image: url('extension://images/notebook_loading.gif');
+    background-size: auto;
+}
+
+#evernote-popup-container #evn-main-notebook.evn-type-pers {
+    background-image: url('extension://images/notebook_icon.png');
+}
+#evernote-popup-container #evn-main-notebook.evn-type-biz {
+    background-image: url('extension://images/notebook_business.png');
+}
+#evernote-popup-container #evn-main-notebook.evn-type-linked {
+    background-image: url('extension://images/notebook_shared.png');
+}
+
+#evernote-popup-container #evn-main-notebook #textName{
+    padding-top:4px;
+    padding-left: 6px;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    max-width: 162px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    font-family: Cambria, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    display: inline-block;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+}
+
+#evernote-popup-container #evn-main-notebook #dropdownIcon {
+    background-image:  url('extension://images/dropdown_down_icon.png');
+    background-position: right 50%;
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+}
+
+#evernote-popup-container #evn-main-notebook.active-selector #dropdownIcon {
+    background-image:  url('extension://images/dropdown_up_icon.png');
+}
+
+/*comment*/
+
+
+/* comments expanding area*/
+
+#evernote-popup-container .comments-container .expandingArea {
+    position: relative;
+}
+
+#evernote-popup-container .comments-container .expandingArea pre,
+#evernote-popup-container .comments-container .expandingArea textarea {
+    padding: 0 5px 0 8px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#evernote-popup-container .comments-container .expandingArea textarea {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+#evernote-popup-container .comments-container .expandingArea pre {
+    min-height: 22px;
+    max-height: 43px;
+    visibility: hidden;
+    box-sizing: content-box;
+}
+
+#evernote-popup-container .comments-container .expandingArea pre * {
+    font: normal 13px/21px Verdana;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+    /*color: red;*/
+}
+
+
+#evernote-popup-container .comments-container {
+    margin-left: 21px;
+}
+
+#evernote-popup-container .evernote-comments {
+    font: normal 13px/21px Verdana;
+    padding: 0 5px 0 8px;
+    text-shadow: 0 1px 2px rgba(000,000,000,0.6);
+    border-radius: 2px;
+    height: 18px;
+    width: 180px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    color: #8a9ca8;
+}
+
+#evernote-popup-container .evernote-comments:focus {
+    background-color: #21262c;
+    color: #ffffff;
+}
+
+#evernote-popup-container .evernote-comments:-ms-input-placeholder {
+    color: #8a9ca8;
+    background-color: transparent;
+}
+
+#evernote-popup-container .evernote-comments:hover {
+    color: #ffffff;
+}
+
+/* default color to overwrite highlighter page changes*/
+
+#evernote-popup-container .evernote-comments::selection {
+    background: #3399FF;
+}
+
+#evernote-popup-container .evn-tags-container input::selection {
+    background: #3399FF;
+}
+
+#evernote-popup-container #evn-notebook-selector input.notebook::selection {
+    background: #3399FF;
+}
+
+#evernote-popup-container .evernote-note-title .title::selection {
+    background: #3399FF;
+}
+
+/* notification and errors*/
+#evernote-popup-container .globalErrorMessage {
+    color: #F2F5F6;
+    padding: 8px 26px 8px 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: baseline;
+    text-align: left;
+    min-height: 30px;
+    background: rgba(0, 0, 0, 0.7) no-repeat 97% center;
+    background-image: url('extension://images/icon_error.png');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+#evernoteLoadingSign {
+    display:block;
+    position: fixed;    
+    top: 50%;
+    left: 50%;
+    width: 42px;
+    height: 42px;
+    margin-left: -21px;
+    margin-top: -21px;
+    border-radius: 21px;
+}
+
+#evernoteLoadingSign #evernoteLogo {
+    width: 100%;
+    height:100%;
+    background: url('extension://images/loading.gif') center center no-repeat;
+}
+
+#evernoteSaveOptionsSign {
+    display:block;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -60px;
+    margin-left: -75px;
+
+    width: 180px;
+    height : 64px;
+    opacity: 0;
+    visibility: hidden;    
+    transition: all 250ms linear;
+    box-sizing: content-box;
+
+    border-radius: 4px;
+    background-color: rgba(250, 250, 250, 0.20);
+}
+
+#evernoteSaveOptionsSign .evernoteSaveOptionsMessage {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+
+    text-align: left;
+
+    background-color: white;
+    background-image: url('extension://images/options_saving.gif');
+    background-repeat: no-repeat;
+    background-position: 35px 50%;
+    background-size: 30px;
+
+    color: #6D7880;
+    padding-left: 73px;
+    font: bold 13px/58px Verdana
+}
+
+
+#evernoteSaveOptionsSign.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#evernoteErrorPopup {
+    position: fixed;
+    display: block;
+    top: 30px;
+    right: -350px;
+    width: 300px;
+    min-height: 100px;    
+    border-radius: 5px;
+    border: 2px solid #555555;
+    box-sizing: border-box;
+
+    background-image: url('extension://images/icon_error.png');
+    background-position: 10px 13px;
+    background-repeat: no-repeat;
+    background-color: #2F373D;
+
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    padding: 10px 10px 10px 36px;
+    font: normal 12px/14px Verdana, Arial, 'sans-serif';
+    color: #BAC5CE;
+}
+
+#evernoteErrorPopup #ev_err_message {
+    padding-right: 15px;
+}
+
+#evernoteErrorPopup.visible {
+    right: 30px;
+}
+
+#evernote-popup-container .visible {
+    display: block
+}
+
+#evernote-popup-container::-ms-clear {
+    display: none;
+}
+
+/*screen capture toast*/
+
+#evernoteScreenCaptureTip *::selection {
+    background: transparent;
+}
+
+#evernoteScreenCaptureTip {
+    display: none;
+    width: 340px;
+    height: 114px;
+    border: 2px solid rgba(178,186,193,0.6);
+    border-radius: 2px;
+    background-color: #2f373d;
+    font-family: Verdana, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -57px;
+}
+
+#evernoteScreenCaptureTip.visible {
+    display: block;
+}
+
+#evernoteScreenCaptureTip * {
+    margin: 0;
+    padding: 0;
+    text-align : center;
+}
+
+#evernoteScreenCaptureTip .evernoteScreenCaptureTitle {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+#evernoteScreenCaptureTip .evernoteScreenCaptureText {
+    font-size: 15px;
+}
+

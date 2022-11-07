@@ -1,0 +1,3685 @@
+/*
+YUI 3.7.3 (build 5687)
+Copyright 2012 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+#evernote-content.evernote-popup-container-quirks-mode *,
+#evernote-options-content .evernote-optionsView-container-quirk *{
+    box-sizing: border-box !important;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode input {
+    padding: 0px;
+}
+
+div#evernote-content *, .evernote-autocomplete-panel *, #evernotePreviewLegend *, .evernote-selector-float-panel {
+    font-family : Helvetica;
+    font-size : 12px;
+    color: #000;
+    line-height: normal;
+    text-shadow: none;
+}
+
+div#evernotePreviewLegend * {
+    color: #ffffff;
+    box-sizing: border-box !important;
+}
+
+#evernote-options-content select {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #000000;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #000000;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+    transform-origin : 52.175px 7.9px;
+    background-attachment : scroll;
+    background-color : rgb(255, 255, 255);
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : rgb(112, 112, 112);
+    border-bottom-style : solid;
+    border-bottom-width : 1px;
+    border-collapse : separate;
+    border-color : rgb(112, 112, 112);
+    border-left-color : rgb(112, 112, 112);
+    border-left-style : solid;
+    border-left-width : 1px;
+    border-right-color : rgb(112, 112, 112);
+    border-right-style : solid;
+    border-right-width : 1px;
+    border-spacing : 0px 0px;
+    border-style : solid;
+    border-top-color : rgb(112, 112, 112);
+    border-top-style : solid;
+    border-top-width : 1px;
+    border-width : 1px;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : rgb(33, 33, 33);
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline-block;
+    empty-cells : show;
+    font-family : helvetica, arial, sans-serif;
+    font-size : 12px;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : rgb(33, 33, 33) 0px none;
+    outline-color : rgb(33, 33, 33);
+    outline-style : none;
+    outline-width : 0px;
+    overflow : hidden;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    position : static;
+    right : auto;
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+    perspective-origin : 52.175px 7.9px;
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : border-box;
+    opacity : 1;
+    overflow-x : hidden;
+    overflow-y : hidden;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    animation-timing-function : cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none rgb(33, 33, 33);
+    column-rule-color : rgb(33, 33, 33);
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+    length : 298;
+    parent-rule : undefined;
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+    transition-timing-function : cubic-bezier(0.25, 0.1, 0.25, 1);
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+
+
+#evernote-options-content p {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 2px 2px;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : block;
+    empty-cells : show;
+    font-family : Times New Roman;
+    font-size : 12pt;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 1em 0px;
+    margin-bottom : 1em;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top : 1em;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    position : static;
+    right : auto;
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    length : 195;
+    parent-rule : undefined;
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+
+#evernoteContentClipperWait div, #evernote-options-content div,#evernotePreviewLegend div, #evernote-popup-container DIV, div#evernote-content, .evernote-autocomplete-panel div, .evernote-selector-float-panel div{
+    scrollbar3d-light-color : #000000;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #000000;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    scrollbar-track-color : #ffffff;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    line-break : normal;
+    float : none;
+    text-autospace : none;
+    zoom : normal;
+    transform : none;
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    cursor : auto;
+    display : block;
+    empty-cells : show;
+    font-family : Helvetica;
+    font-size : 12px;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    background-clip : border-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    text-align : left;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    text-shadow : none;
+    baseline-shift : baseline;
+    stop-opacity : 1;
+    text-anchor : start;
+}
+#evernote-options-content a, #evernote-popup-container A {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #0066cc;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #0066cc;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #0066cc;
+    border-left-color : #0066cc;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #0066cc;
+    border-right-style : none;
+    border-right-width : medium;
+    border-style : none;
+    border-top-color : #0066cc;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #0066cc;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #0066cc 0px none;
+    outline-color : #0066cc;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : underline;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #0066cc;
+    column-rule-color : #0066cc;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-popup-container input {
+    background-color : rgb(255, 255, 255) !important;
+    background-image : none !important;
+}
+/*#evernote-options-content select,*/ #evernote-popup-container INPUT {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : rgb(33, 33, 33);
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : rgb(255, 255, 255);
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : rgb(112, 112, 112);
+    border-bottom-style : solid;
+    border-bottom-width : 1px;
+    border-collapse : separate;
+    border-color : rgb(112, 112, 112);
+    border-left-color : rgb(112, 112, 112);
+    border-left-style : solid;
+    border-left-width : 1px;
+    border-right-color : rgb(112, 112, 112);
+    border-right-style : solid;
+    border-right-width : 1px;
+    border-style : solid;
+    border-top-color : rgb(112, 112, 112);
+    border-top-style : solid;
+    border-top-width : 1px;
+    border-width : 1px;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : rgb(33, 33, 33);
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline-block;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : rgb(33, 33, 33) 0px none;
+    outline-color : rgb(33, 33, 33);
+    outline-style : none;
+    outline-width : 0px;
+    overflow : hidden;
+    padding : 2px 1px;
+    padding-bottom : 2px;
+    padding-left : 1px;
+    padding-right : 1px;
+    padding-top : 2px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : hidden;
+    overflow-y : hidden;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none rgb(33, 33, 33);
+    column-rule-color : rgb(33, 33, 33);
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-options-content br, #evernote-popup-container BR {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #000000;
+    column-rule-color : #000000;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-popup-container SPAN, #evernotePreviewLegend SPAN, #evernote-popup-container label {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #000000;
+    column-rule-color : #000000;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+
+#evernotePreviewLegend UL {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : block;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 1em 0px;
+    margin-bottom : 1em;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top : 1em;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px 0px 0px 30pt;
+    padding-bottom : 0px;
+    padding-left : 30pt;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    position : static;
+    right : auto;
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    /*box-sizing : content-box;*/
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    length : 195;
+    parent-rule : undefined;
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernotePreviewLegend LI {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : list-item;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    position : static;
+    right : auto;
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    /*box-sizing : content-box;*/
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    length : 195;
+    parent-rule : undefined;
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-popup-container TEXTAREA {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : rgba(0, 0, 0, 0.6);
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : rgb(255, 255, 255);
+    background-image : url("file:///C:/Program%20Files%20(x86)/Evernote/Evernote/EvernoteIERes/images/icon_text.png");
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : rgb(112, 112, 112);
+    border-bottom-style : solid;
+    border-bottom-width : 1px;
+    border-collapse : separate;
+    border-color : rgb(112, 112, 112);
+    border-left-color : rgb(112, 112, 112);
+    border-left-style : solid;
+    border-left-width : 1px;
+    border-right-color : rgb(112, 112, 112);
+    border-right-style : solid;
+    border-right-width : 1px;
+    border-style : solid;
+    border-top-color : rgb(112, 112, 112);
+    border-top-style : solid;
+    border-top-width : 1px;
+    border-width : 1px;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : rgba(0, 0, 0, 0.6);
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline-block;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : rgba(0, 0, 0, 0.6) 0px none;
+    outline-color : rgba(0, 0, 0, 0.6);
+    outline-style : none;
+    outline-width : 0px;
+    overflow : scroll;
+    padding : 2px;
+    padding-bottom : 2px;
+    padding-left : 2px;
+    padding-right : 2px;
+    padding-top : 2px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : auto;
+    visibility : inherit;
+    white-space : pre-wrap;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : hidden;
+    overflow-y : scroll;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none rgba(0, 0, 0, 0.6);
+    column-rule-color : rgba(0, 0, 0, 0.6);
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-options-content table, #evernote-popup-container TABLE {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0px 0px;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : table;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : top;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : border-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #000000;
+    column-rule-color : #000000;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-options-content tbody,#evernote-popup-container TBODY {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0px 0px;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : table-row-group;
+    empty-cells : show;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : middle;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #000000;
+    column-rule-color : #000000;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-options-content tr, #evernote-popup-container TR {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0px 0px;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : table-row;
+    empty-cells : show;
+    font-family : Helvetica;
+    font-size : 12px;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : middle;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #000000;
+    column-rule-color : #000000;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+
+
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+#evernote-options-content td, #evernote-popup-container TD {
+    block-direction : ltr;
+    clip-bottom : auto;
+    clip-left : auto;
+    clip-right : auto;
+    clip-top : auto;
+    has-layout : true;
+    accelerator : false;
+    background-position-x : 0%;
+    background-position-y : 0%;
+    layout-flow : horizontal;
+    layout-grid-char : none;
+    layout-grid-line : none;
+    layout-grid-mode : both;
+    layout-grid-type : loose;
+    line-break : normal;
+    scrollbar3d-light-color : #e3e3e3;
+    scrollbar-arrow-color : #000000;
+    scrollbar-base-color : #000000;
+    scrollbar-dark-shadow-color : #696969;
+    scrollbar-face-color : #f0f0f0;
+    scrollbar-highlight-color : #ffffff;
+    scrollbar-shadow-color : #a0a0a0;
+    style-float : none;
+    text-autospace : none;
+    text-kashida : 0%;
+    text-kashida-space : 0%;
+    writing-mode : lr-tb;
+    zoom : normal;
+    transform : none;
+    background-attachment : scroll;
+    background-color : transparent;
+    background-image : none;
+    background-position : 0% 0%;
+    background-repeat : repeat;
+    border-bottom-color : #000000;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-color : #000000;
+    border-left-color : #000000;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-color : #000000;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0px 0px;
+    border-style : none;
+    border-top-color : #000000;
+    border-top-style : none;
+    border-top-width : medium;
+    border-width : medium;
+    bottom : auto;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : #000000;
+    css-float : none;
+    cursor : auto;
+    direction : ltr;
+    display : table-cell;
+    empty-cells : show;
+    font-family : Helvetica;
+    font-size : 12px;
+    font-size-adjust : none;
+    font-stretch : normal;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : 400;
+    height : auto;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : auto;
+    margin-bottom : auto;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : auto;
+    max-height : none;
+    max-width : none;
+    min-height : auto;
+    min-width : auto;
+    orphans : 2;
+    outline : #000000 0px none;
+    outline-color : #000000;
+    outline-style : none;
+    outline-width : 0px;
+    overflow : visible;
+    padding : 1px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    table-layout : auto;
+    text-align : left;
+    text-decoration : none;
+    text-indent : 0pt;
+    text-transform : none;
+    top : auto;
+    unicode-bidi : normal;
+    vertical-align : middle;
+    visibility : inherit;
+    white-space : normal;
+    widows : 2;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+    backface-visibility : visible;
+    perspective : none;
+    transform-style : flat;
+    background-clip : border-box;
+    background-origin : padding-box;
+    background-size : auto;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-radius : 0px;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    box-shadow : none;
+    box-sizing : content-box;
+    opacity : 1;
+    overflow-x : visible;
+    overflow-y : visible;
+    ruby-align : auto;
+    ruby-overhang : auto;
+    ruby-position : above;
+    text-align-last : auto;
+    text-justify : auto;
+    text-overflow : clip;
+    text-underline-position : auto;
+    word-break : normal;
+    animation-delay : 0s;
+    animation-direction : normal;
+    animation-duration : 0s;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    font-feature-settings : normal;
+    break-after : auto;
+    break-before : auto;
+    break-inside : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none #000000;
+    column-rule-color : #000000;
+    column-rule-style : none;
+    column-rule-width : medium;
+    column-span : 1;
+    column-width : auto;
+    columns : auto auto;
+    text-shadow : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : all;
+    alignment-baseline : auto;
+    baseline-shift : baseline;
+    clip-path : none;
+    clip-rule : nonzero;
+    dominant-baseline : auto;
+    enable-background : accumulate;
+    fill : black;
+    fill-opacity : 1;
+    fill-rule : nonzero;
+    filter : none;
+    flood-opacity : 1;
+    glyph-orientation-horizontal : 0deg;
+    glyph-orientation-vertical : auto;
+    kerning : auto;
+    marker : none;
+    marker-end : none;
+    marker-mid : none;
+    marker-start : none;
+    mask : none;
+    pointer-events : visiblePainted;
+    stop-opacity : 1;
+    stroke-dasharray : none;
+    stroke-dashoffset : 0px;
+    stroke-linecap : butt;
+    stroke-linejoin : miter;
+    stroke-miterlimit : 4;
+    stroke-opacity : 1;
+    stroke-width : 0.01px;
+    text-anchor : start;
+}
+
+.yui3-cssreset div {
+    box-sizing: content-box;
+}
+
+.yui3-cssreset html {
+    color: #000;
+    background: #FFF
+}
+
+.yui3-cssreset body, .yui3-cssreset div, .yui3-cssreset dl, .yui3-cssreset dt, .yui3-cssreset dd, .yui3-cssreset ul, .yui3-cssreset ol, .yui3-cssreset li, .yui3-cssreset h1, .yui3-cssreset h2, .yui3-cssreset h3, .yui3-cssreset h4, .yui3-cssreset h5, .yui3-cssreset h6, .yui3-cssreset pre, .yui3-cssreset code, .yui3-cssreset form, .yui3-cssreset fieldset, .yui3-cssreset legend, .yui3-cssreset input, .yui3-cssreset textarea, .yui3-cssreset p, .yui3-cssreset blockquote, .yui3-cssreset th, .yui3-cssreset td {
+    margin: 0;
+    padding: 0
+}
+
+.yui3-cssreset table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.yui3-cssreset table, .yui3-cssreset td {
+    vertical-align: top;
+    border: none;
+}
+
+.yui3-cssreset fieldset, .yui3-cssreset img {
+    border: 0
+}
+
+.yui3-cssreset fieldset {
+    background-image: none !important;
+    padding: 0 !important;
+}
+
+.yui3-cssreset address, .yui3-cssreset caption, .yui3-cssreset cite, .yui3-cssreset code, .yui3-cssreset dfn, .yui3-cssreset em, .yui3-cssreset strong, .yui3-cssreset th, .yui3-cssreset var {
+    font-style: normal;
+    font-weight: normal
+}
+
+.yui3-cssreset ol, .yui3-cssreset ul {
+    list-style: none
+}
+
+.yui3-cssreset caption, .yui3-cssreset th {
+    text-align: left
+}
+
+.yui3-cssreset h1, .yui3-cssreset h2, .yui3-cssreset h3, .yui3-cssreset h4, .yui3-cssreset h5, .yui3-cssreset h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+.yui3-cssreset q:before, .yui3-cssreset q:after {
+    content: ''
+}
+
+.yui3-cssreset abbr, .yui3-cssreset acronym {
+    border: 0;
+    font-variant: normal
+}
+
+.yui3-cssreset sup {
+    vertical-align: text-top
+}
+
+.yui3-cssreset sub {
+    vertical-align: text-bottom
+}
+
+.yui3-cssreset input, .yui3-cssreset textarea, .yui3-cssreset select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+.yui3-cssreset input, .yui3-cssreset textarea, .yui3-cssreset select {
+    *font-size: 100%
+}
+
+.yui3-cssreset legend {
+    color: #000
+}
+
+#yui3-css-stamp.cssreset-context {
+    display: none
+}
+div#evernote-popup-container *
+{
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    line-height: normal;
+}
+
+div#evernote-popup-container
+{
+    border-radius: 8px;
+    /*overall width: 412px*/
+    padding: 5px;
+    border: 1px solid #D2D3D4;
+    width: 400px;
+
+    background-color: white;
+    color: #000;
+    line-height: normal;
+}
+
+div#evernote-popup-container,
+.evernote-autocomplete-panel,
+.evernote-selector-float-panel,
+#evernote-options-container-identifier.evernote-optionView-container
+{
+    box-shadow:0px 2px 10px -1px rgba(0,0,0,0.5);
+}
+
+
+#evernote-popup-container .evernote-logo
+{
+    width: 191px;
+    height: 36px;
+    float: left;
+    position: relative;
+}
+
+#evernote-popup-container .clear
+{
+    clear: both;
+}
+
+#evernote-popup-container .evernote-submitWithOptions
+{
+    background-color: #f2f5f6;    
+    padding: 13px 13px 13px;
+    border-radius: 8px;
+
+}
+
+#evernote-popup-container #evernote-clipNoteArticle,
+#evernote-popup-container #evernote-clipNoteFullpage,
+#evernote-popup-container #evernote-clipNoteUrl
+{
+    display: inline-block;
+}
+
+#evernote-popup-container .evernote-button-wrapper
+{
+    width: 280px;
+    margin-left: 60px;
+}
+
+#evernote-popup-container .evernote-button-wrapper .evernote-left-border,
+#evernote-popup-container .evernote-button-wrapper .evernote-right-border
+{
+    width: 5px;
+    background-repeat: no-repeat;
+}
+
+#evernote-popup-container .evernote-button
+{
+    width: 270px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica;
+    color: #59595b;
+    border: 1px solid #b2c0a6;
+    border-left-width: 0;
+    border-right-width: 0;
+    background-image: linear-gradient(bottom, rgb(245,245,245) 44%, rgb(231,231,231) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 44%, rgb(231,231,231) 72%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#e7e7e7", endColorStr="#f5f5f5");
+    margin-bottom: 10px;
+}
+
+#evernote-popup-container .evernote-ui-state-hover
+{
+    background-image: linear-gradient(bottom, rgb(238,248,229) 44%, rgb(225,239,212) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(238,248,229) 44%, rgb(225,239,212) 72%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#e1efd4", endColorStr="#eef8e5");
+}
+
+#evernote-popup-container .user-image-icon
+{
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    float: left;
+}
+
+#evernote-popup-container .user-name
+{
+    font-weight: bold;
+    font-size: 13px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#evernote-popup-container .dropdown-open-icon
+{
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-top: 3px;
+}
+
+#evernote-popup-container .user-account-container
+{
+    padding: 10px;
+    float: right;
+}
+
+#evernote-popup-container .settings-icon
+{
+    width: 24px;
+    height: 24px;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode {
+    position: absolute !important;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .evernote-button
+{
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .evernote-button-wrapper
+{
+    margin-left: 20px;
+}
+
+#evernote-popup-container .options-container
+{
+    display: none;
+}
+
+#evernote-popup-container .clickable
+{
+    cursor: pointer;
+}
+
+#evernote-popup-container .evernote-footer
+{
+    margin-top: 10px;
+    margin-left: 11px;
+}
+
+#evernote-popup-container .evernote-footer .options
+{
+    float: left;
+    margin-top: 7px;
+    color: #96C678;
+}
+
+#evernote-popup-container .evernote-footer .options-link {
+    color: #6fb536;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal ;
+}
+
+#evernote-popup-container .evernote-footer .actions-selector
+{
+    float: right;
+    margin-top: 0;
+}
+
+#evernote-popup-container .note-attributes
+{
+    margin-top: 13px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+#evernote-popup-container .note-attributes label
+{
+    text-align: left;
+    font-size: 12px !important;
+}
+
+#evernote-popup-container .note-attributes .notebook-selector
+{
+    background-color: white;
+    text-align: left;
+
+    border-bottom: 1px solid #D9D9D9;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 28px;
+}
+
+#evernote-popup-container .note-attributes .notebook-selector .custom-selector
+{
+    float: left
+}
+
+#evernote-popup-container .note-attributes .notebook-selector .selected-item-panel
+{
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#evernote-popup-container ::-ms-clear {
+    display: none;
+}
+
+#evernote-popup-container .note-attributes .tags-container
+{
+    text-align: left;
+    background-color: white;
+    border: 0 none #fff;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#evernote-popup-container .note-attributes .tags-container,
+#evernote-popup-container .note-attributes .comments-container,
+#evernote-popup-container .note-attributes .notebook-selector
+{
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+}
+
+#evernote-popup-container .note-attributes textarea.evernote-comments
+{
+    height: 15px;
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 0px;
+    resize: both;
+    overflow: hidden;
+}
+
+#evernote-popup-container .note-attributes .comments-container textarea.active-comments-field
+{
+    height: 50px !important;
+    overflow: auto;
+}
+
+#evernote-popup-container .note-attributes .comments-container
+{
+    background-position: 9px 8px;
+    width: auto;
+    border-bottom: none;
+}
+
+#evernote-popup-container .note-attributes .tags-container,
+#evernote-popup-container .note-attributes .comments-container
+{
+    padding-left: 28px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#evernote-popup-container .note-attributes input.tags
+{
+    border: 0 none #fff;
+    width: 280px;
+    display: inline-block;
+    box-sizing: content-box;
+    height: 14px;
+    border-radius: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#evernote-popup-container .note-attributes input.tags:-ms-input-placeholder,
+#evernote-popup-container .note-attributes textarea.evernote-comments:-ms-input-placeholder,
+#evernote-popup-container .note-attributes input.title:-ms-input-placeholder{
+    color: #bababa;
+}
+
+#evernote-popup-container .tags-container .evernote-remove-tags-image
+{
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#evernote-popup-container .note-attributes textarea
+{
+    overflow: auto;
+    border-bottom: 0 none #fff;
+    box-sizing: border-box;
+    color: #000;
+}
+
+#evernote-popup-container .actions-selector .selector-left-border
+{
+    width: 5px;
+    height: 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#evernote-popup-container .actions-selector .selector-right-border
+{
+    width: 30px;
+    height: 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .actions-selector .selector-main-content .selected-item-panel,
+#evernote-content.evernote-popup-container-quirks-mode .actions-selector .selector-main-content .custom-selector
+{
+    height: 28px;
+}
+
+
+#evernote-popup-container .actions-selector .selector-main-content .selected-item-panel
+{
+    background-image: linear-gradient(bottom, rgb(237,247,228) 44%, rgb(226,240,214) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(237,247,228) 44%, rgb(226,240,214) 72%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#EDF7E4", endColorStr="#E2F0D6");
+
+    border-bottom: 1px solid #b2c0a6;
+    border-top: 1px solid #b2c0a6;
+    border-right: 1px solid #b2c0a6;
+    height: 20px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #59595B;
+    cursor: pointer;
+}
+
+#evernote-popup-container .tags-container .evernote-added-tag-entry
+{
+    color: black;
+    margin-right: 5px;
+    padding: 2px 14px 2px 4px;
+    background: #ebf5e2 no-repeat 98% 50%;
+    border: 1px solid #ccd6c5;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#evernote-popup-container .tags-container .evernote-added-tag-entry .evernote-close-button
+{
+    width: 14px;
+    height: 14px;
+    /*margin-left: 2px;*/
+    /*display: inline-block;*/
+    position: absolute;
+    cursor: pointer;
+}
+
+
+#evernote-popup-container .evernote-note-title
+{
+    border: 0 none #fff;
+    border-bottom: 1px solid #D9D9D9;
+    height: 20px;
+    padding: 6px 10px 0px  10px;
+}
+
+
+#evernote-content.evernote-popup-container-quirks-mode .evernote-note-title
+{
+    height: auto;
+    padding: 6px 10px 6px  10px;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .evernote-note-title input
+{
+    /*width: 389px;*/
+}
+
+#evernote-popup-container .evernote-note-title input
+{
+    height: 14px;
+    border: 0 none #fff;
+    border-radius: 0;
+    width: 100%;
+}
+
+#evernote-popup-container .globalErrorMessage {
+    /*display: none;*/
+    color: #F2F5F6;
+    background-size: 16px 16px;
+    padding: 8px 26px 8px 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: baseline;
+    text-align: left;
+    min-height: 30px;
+    background: rgba(0, 0, 0, 0.7) no-repeat 99% center;
+    background-repeat: no-repeat;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .globalErrorMessage,
+#evernote-content.evernote-popup-container-less-than-nine .globalErrorMessage {
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    background-color: rgb(0, 0, 0);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb000000, endColorstr=#bb000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .evernote-note-title input
+{
+    width: 100%;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .note-attributes .notebook-selector
+{
+    width: 100%;
+}
+
+#evernote-content.evernote-popup-container-quirks-mode .note-attributes .tags-container,
+#evernote-content.evernote-popup-container-quirks-mode .note-attributes .comments-container
+{
+    width: 100%;
+}
+
+#evernote-content.evernote-popup-container-less-than-nine .evernote-footer .actions-selector table
+{
+    float: right;
+}
+
+#evernote-popup-container #evernote-businessIcon
+{
+    width: 18px;
+    height: 15px;
+}
+
+#evernote-popup-container #evernote-businessIcon.evernote-visible,
+#evernote-popup-container #evernote-multiplayerIcon.evernote-visible
+{
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+#evernote-popup-container #evernote-businessIcon.evernote-hidden,
+#evernote-popup-container #evernote-multiplayerIcon.evernote-hidden
+{
+    display: none;
+}
+
+#evernote-popup-container #evernote-multiplayerIcon
+{
+    width: 23px;
+    height: 13px;
+}/* All styles should have important modifier since we inject options dialog to the page and we should protect dialog from page's styles */
+#evernote-options-container-identifier .note {
+    color: #696969 !important;
+    font-size: 9pt !important;
+    font-weight: normal;
+    text-decoration: none;
+    font-family : Helvetica;
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+
+#evernote-options-container-identifier .evernote-optionView td {
+    vertical-align: top !important;
+    text-align: left !important;
+    padding-bottom: 10px;
+}
+
+#evernote-options-container-identifier .option-name {
+    width: 130px !important;
+    color: #696969;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#evernote-options-container-identifier .evernote-optionView select {
+    font-size: 12px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+#evernote-options-container-identifier.evernote-optionView-container {
+    font-size: 12px !important;
+    font-family: helvetica, arial, sans-serif;
+    position: fixed !important;
+    width: 500px !important;
+    display: none;
+    z-index: 2147483647;
+    top: 50%;
+    left: 50%;
+    margin-top: -95px;
+    margin-left: -250px;
+}
+
+#evernote-options-container-identifier .evernote-optionView {
+    border-radius: 8px;
+    border: 1px solid #D2D3D4;
+    background-color: #f2f5f6;
+    padding: 10px 20px 10px 20px;
+}
+
+#evernote-options-container-identifier.evernote-absolute-position-element {
+    position: absolute !important;
+    top: expression(((document.documentElement.scrollTop || document.body.scrollTop) + ((((document.documentElement.clientHeight || document.body.clientHeight) + (!this.offsetHeight && 0)) / 2) >> 0)) + "px")  !important;
+}
+
+#evernote-options-container-identifier .evernote-button-wrapper
+{
+    width: 60px;
+    /*margin-left: 215px;*/
+    margin: 0;
+}
+
+#evernote-options-container-identifier .evernote-button-wrapper .evernote-left-border,
+#evernote-options-container-identifier .evernote-button-wrapper .evernote-right-border
+{
+    width: 5px;
+    background-repeat: no-repeat;
+}
+
+#evernote-options-container-identifier.evernote-optionsView-container-quirk .evernote-button {
+    box-sizing: border-box;
+    height: 31px;
+}
+
+#evernote-options-container-identifier .evernote-button
+{
+    width: 50px;
+    height: 29px;
+    line-height: 16px;
+    display: inline-block;
+    margin: 0 auto 5px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: arial, helvetica;
+    color: #59595b;
+    border: 1px solid #b2c0a6;
+    border-left-width: 0;
+    border-right-width: 0;
+    background-image: linear-gradient(bottom, rgb(245,245,245) 44%, rgb(231,231,231) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 44%, rgb(231,231,231) 72%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#e7e7e7", endColorStr="#f5f5f5");
+}
+
+#evernote-options-container-identifier .evernote-button div {
+    text-align: center;
+    padding-top: 8px;
+}
+
+#evernote-options-container-identifier .evernote-optionView .button-container td {
+    padding-bottom: 0px;
+}
+
+#evernote-options-container-identifier.evernote-optionsView-container-quirk .evernote-button div {
+    padding-top: 7px;
+}
+
+#evernote-options-container-identifier .button:hover
+{
+    background-image: linear-gradient(bottom, rgb(238,248,229) 44%, rgb(225,239,212) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(238,248,229) 44%, rgb(225,239,212) 72%);
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#e1efd4", endColorStr="#eef8e5");
+}
+
+#evernote-options-container-identifier .clickable
+{
+    cursor: pointer;
+}
+
+#evernote-options-container-identifier #evernote-options-logo-container
+{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#evernote-options-container-identifier .evernote-options-logo
+{
+    width: 191px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#evernote-options-container-identifier .evernote-headline
+{
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.evernote-selector-float-panel
+{
+    display: none;
+    position: fixed !important;
+    z-index: 2147483647;
+    background-color: #f5f5f5;
+    border: 1px solid #D9D9D9;
+    text-align: left;
+}
+
+.evernote-selector-float-panel-quirk-mode
+{
+    position: absolute !important;
+}
+
+#evernote-popup-container  .custom-selector .selected-item-panel
+{
+    cursor: default;
+    color: black;
+}
+
+.evernote-selector-float-panel .selector-item:hover,
+.evernote-selector-float-panel .evernote-hover
+{
+    background-color: #3399FF !important;
+    color: white !important;
+}
+
+.evernote-selector-float-panel .evernote-action-disabled
+{
+    color: rgb(109, 109, 109) !important;
+}
+
+.evernote-selector-float-panel .animated-panel .evernote-action-disabled:hover
+{
+    background-color: white !important;
+    color: rgb(109, 109, 109) !important;
+}
+
+.evernote-selector-float-panel .selector-item
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    cursor: default;
+    color: black;
+}
+
+.evernote-notebooks-selector-float-panel .selector-item,
+.evernote-notebooks-selector-float-panel .group-item {
+    padding-left: 20px;
+}
+
+.evernote-notebooks-selector-float-panel .group-item .group-title
+{
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #000;
+}
+
+.evernote-notebooks-selector-float-panel .selector-item.selected {
+    background-position: 8px center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+.evernote-notebooks-selector-float-panel {
+    width: 320px;
+    padding: 10px 0px;
+    max-height: 250px;
+    height: expression(this.scrollHeight > 250 ? "250px" : "auto");
+    border-radius: 4px;
+}
+
+.evernote-notebooks-selector-float-panel .animated-panel {
+    width: 320px;
+    overflow: auto;
+    position: relative;
+    max-height: 250px;
+    height: expression(this.scrollHeight > 250 ? "250px" : "auto");
+}
+
+.evernote-notebooks-selector-float-panel .selector-item .description-item
+{
+    padding: 0px 10px;
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #7a7a7a;
+}
+
+.evernote-notebooks-selector-float-panel .selector-item .description-item span {
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #7a7a7a;
+}
+
+#evernote-popup-container .notebook-selector .custom-selector .selected-item-panel {
+    min-width: 150px;
+	min-height: 13px;
+    display: inline-block;
+    width: expression(this.scrollWidth < 150 ? "150px" : "auto");
+    padding-right: 20px;
+}
+
+#evernote-popup-container .actions-selector .note-attributes .selected-item-panel
+{
+    width: 150px;
+}
+
+.evernotePreviewContainer {
+    padding: 10px !important;
+    font-family: Helvetica, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    color: #696969 !important;
+    z-index: 2147483646 !important;
+    direction: ltr !important;
+}
+
+.evernotePreviewUrlContainer {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    max-width: 50% !important;
+    white-space: nowrap; overflow : hidden !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    direction: ltr !important;
+    color: #7ebe40 !important;
+    padding: 8px !important;
+    background: white !important;
+}
+
+.evernotePreviewUrlContainer a,
+.evernotePreviewUrlContainer a:link,
+.evernotePreviewUrlContainer a:active,
+.evernotePreviewUrlContainer a:hover,
+.evernotePreviewUrlContainer a:visited {
+    color: #7ebe40 !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.evernotePreviewUrlContainer span {
+    display: inline !important;
+}
+
+#evernotePreviewLegend {
+    display: none;
+    float: none !important;
+    background: rgba(0,0,0,0.8) !important;
+    filter: alpha(opacity=80);
+    padding: 12px !important;
+    position: fixed !important;
+    /*height: 135px !important;*/
+    color: white !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    text-decoration: none !important;
+    text-align: left !important;
+    margin: 0px !important;
+    z-index: 9999999999999999 !important;
+    direction: ltr !important;
+    width: auto;
+}
+
+#evernotePreviewLegend.quirk-mode {
+    background-color: #000;
+    width: 180px;
+    z-index: 2147483647 !important;
+}
+
+#evernotePreviewLegend.quirk-mode ul{
+    display: inline-block;
+    float: left;
+}
+
+#evernotePreviewLegend.evernote-preview-position-top {
+    position: absolute;
+}
+
+/* Rather than defining this for every element that might occur inside our preview legend, we justapply it to
+ * everything a few levels down with a high degree of specificity. */
+*#evernotePreviewLegend, *#evernotePreviewLegend *, *#evernotePreviewLegend * *, *#evernotePreviewLegend * * * {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+#evernotePreviewLegend.evernotePreviewLegend {
+    left: 10px !important;
+}
+
+#evernotePreviewLegend.evernotePreviewLegendSafari {
+    right: 10px !important;
+}
+
+#evernotePreviewLegend UL,
+#evernotePreviewLegend ul {
+    display: block !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: none !important;
+    background: none !important;
+    color: white !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    width: auto;
+}
+
+#evernotePreviewLegend UL li,
+#evernotePreviewLegend ul li {
+    margin: 0px 0px 5px 0px !important;
+    padding: 0px !important;
+    list-style: none !important;
+    background: none !important;
+    color: white !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    height: 22px !important;
+}
+
+#evernotePreviewLegend UL li span,
+#evernotePreviewLegend ul li span {
+    line-height: 22px;
+    color: #fff;
+}
+
+#evernotePreviewLegend UL li.last,
+#evernotePreviewLegend ul li.last {
+    color: white !important;
+}
+
+#evernotePreviewLegend .keyIcon {
+    display: block !important;
+    text-align: right !important;
+    vertical-align: middle !important;
+    width: 49px !important;
+    height: 22px !important;
+    padding: 0 !important;
+    border: none !important;
+    margin-right: 6px !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+    float: left !important;
+    background-color: transparent !important;
+    padding-top: -5px !important;
+}
+
+#evernotePreviewLegend .keyIcon img {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0px !important;
+    float: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#evernotePreviewLegend.hidden {
+    display: none !important;
+    z-index: 0;
+}
+
+#evernotePreviewLegend.preview-visible {
+    position: absolute !important;
+    top: 0px;
+    top: expression((document.documentElement.scrollTop || document.body.scrollTop) + "px") !important;
+    display: inline-block !important;
+    z-index: 2147483647 !important;
+}
+
+#evernotePreviewLegend.visible {
+    display: inline-block !important;
+    top: 0 !important;
+    z-index: 999999999999999;
+}
+
+#evernotePreviewLegend .keyIcon {
+    height: 22px;
+    width: 49px;
+}
+
+.evernote-top-fixed-position-quirks {
+    /*position: absolute !important;*/
+    top: expression(((document.documentElement.scrollTop || document.body.scrollTop) + this.offsetHeight - this.offsetHeight) + "px")  !important;
+    border-color: rgb(0, 0, 0);
+    filter: alpha(opacity=70);
+}
+
+.evernote-middle-fixed-position-quirks {
+    position: absolute !important;
+    top: expression(((document.documentElement.scrollTop || document.body.scrollTop) + ((((document.documentElement.clientHeight || document.body.clientHeight) + (!this.offsetHeight && 0)) / 2) >> 0)) + "px")  !important;
+    left: expression((((document.body.clientWidth || document.documentElement.clientWidth) / 2) - (this.offsetWidth / 2)) + "px") !important;
+}
+#evernoteContentClipperWait{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    z-index: 9999999999999999;
+    display: block;
+    font-family: arial, helvetica, sans-serif;
+}
+
+#evernoteContentClipperWait * {
+    display: block !important;
+    text-shadow: none !important;
+}
+
+#evernoteContentClipperWait.quirk-mode-container {
+    width: 160px;
+}
+
+#evernoteContentClipperWait div#evernoteContentClipperWaitContent.content-less-than-nine-container {
+    background-color: rgb(0, 0, 0);
+    filter: alpha(opacity=80);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+
+div#evernoteContentClipperWaitContent {
+    background: black;
+    opacity: .8;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 5px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 10pt;
+    width: 100%;
+    height: 100%;
+}
+
+#evernoteContentClipperWaitText {
+    margin: 0;
+    padding: 0;
+    float: none;
+    display: inline;
+    letter-spacing: 1pt;
+    line-height: 18px;
+}
+
+#evernoteContentClipperWait img {
+    display: inline;
+    float: left;
+    margin: 0 0 0 4px;
+    padding: 0;
+    border: none;
+}
+
+div#evernote-spinner-container {
+    width: 20px;
+    height: 18px;
+    float: left;
+}
+.evernote-autocomplete-panel
+{
+    position: absolute;
+    display: none;
+    z-index: 2147483647;
+    top: 30px;
+    left: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #D9D9D9;
+    width: 150px;
+}
+
+.evernote-autocomplete-panel .autocomplete-item
+{
+    padding: 5px 10px;
+    text-align: left;
+    font-family: Helvetica,serif !important;
+    font-size: 12px !important;
+    font-weight: normal;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.evernote-autocomplete-panel .autocomplete-item:hover,
+.evernote-autocomplete-panel .evernote-hover
+{
+    background-color: #3399FF !important;
+    color: white !important;
+}
+
+.evernote-autocomplete-panel .descendant-item
+{
+    background-color: #F5F5F5;
+}

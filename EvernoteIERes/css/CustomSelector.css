@@ -1,0 +1,110 @@
+.evernote-selector-float-panel
+{
+    display: none;
+    position: fixed !important;
+    z-index: 2147483647;
+    background-color: #f5f5f5;
+    border: 1px solid #D9D9D9;
+    text-align: left;
+}
+
+.evernote-selector-float-panel-quirk-mode
+{
+    position: absolute !important;
+}
+
+#evernote-popup-container  .custom-selector .selected-item-panel
+{
+    cursor: default;
+    color: black;
+}
+
+.evernote-selector-float-panel .selector-item:hover,
+.evernote-selector-float-panel .evernote-hover
+{
+    background-color: #3399FF !important;
+    color: white !important;
+}
+
+.evernote-selector-float-panel .evernote-action-disabled
+{
+    color: rgb(109, 109, 109) !important;
+}
+
+.evernote-selector-float-panel .animated-panel .evernote-action-disabled:hover
+{
+    background-color: white !important;
+    color: rgb(109, 109, 109) !important;
+}
+
+.evernote-selector-float-panel .selector-item
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    cursor: default;
+    color: black;
+}
+
+.evernote-notebooks-selector-float-panel .selector-item,
+.evernote-notebooks-selector-float-panel .group-item {
+    padding-left: 20px;
+}
+
+.evernote-notebooks-selector-float-panel .group-item .group-title
+{
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #000;
+}
+
+.evernote-notebooks-selector-float-panel .selector-item.selected {
+    background-position: 8px center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+.evernote-notebooks-selector-float-panel {
+    width: 320px;
+    padding: 10px 0px;
+    max-height: 250px;
+    height: expression(this.scrollHeight > 250 ? "250px" : "auto");
+    border-radius: 4px;
+}
+
+.evernote-notebooks-selector-float-panel .animated-panel {
+    width: 320px;
+    overflow: auto;
+    position: relative;
+    max-height: 250px;
+    height: expression(this.scrollHeight > 250 ? "250px" : "auto");
+}
+
+.evernote-notebooks-selector-float-panel .selector-item .description-item
+{
+    padding: 0px 10px;
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #7a7a7a;
+}
+
+.evernote-notebooks-selector-float-panel .selector-item .description-item span {
+    font-size: 12px;
+    font-family: Helvetica;
+    color: #7a7a7a;
+}
+
+#evernote-popup-container .notebook-selector .custom-selector .selected-item-panel {
+    min-width: 150px;
+	min-height: 13px;
+    display: inline-block;
+    width: expression(this.scrollWidth < 150 ? "150px" : "auto");
+    padding-right: 20px;
+}
+
+#evernote-popup-container .actions-selector .note-attributes .selected-item-panel
+{
+    width: 150px;
+}
+
