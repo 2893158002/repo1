@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uyun.dao.UserMapper">
+    <select id="findAllUserByPage" parameterType="com.uyun.domain.UserVo" resultType="com.uyun.domain.User">
+        select * from user
+        <where>
+            <if test="true">
+                and is_del != 1
+            </if>
+            <if test="username != null and username !=''">
+                and name = #{username}
+            </if>
+            <if test="startCreateTime != null and endCreatTime != null">
+                and create_time between #{startCreateTime} and #{endCreateTime}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="login" parameterType="com.uyun.domain.User" resultType="com.uyun.domain.User">
+        select *
+        from user
+        where phone = #{phone}
+    </select>
+
+    <!--    删除关联中间表-->
+    <select id="deleteUserContextRole" parameterType="int">
+        delete
+        from user_role_relation
+        where user_id = #{userid}
+    </select>
+    <!--    分配角色-->
+    <insert id="userContextRole" parameterType="com.uyun.domain.User_Role_relation">
+        insert into user_Role_relation
+        values (null, #{userId}, #{roleId}, #{createdTime}, #{updatedTime}, #{createdBy}, #{updatedBy})
+    </insert>
+
+
+    <!--    根据id查询角色信息-->
+    <select id="findUserRelationRoleById" resultType="com.uyun.domain.Role" parameterType="int">
+        select *
+        from roles r
+                 inner join user_role_relation ur on r.id = ur.role_id
+        where ur.user_id = #{userid}
+    </select>
+    <!--    根据id查询角色所拥有的顶级菜单-->
+    <select id="findParentMenuByRoleId" parameterType="java.util.List" resultType="com.uyun.domain.Menu">
+        SELECT
+        DISTINCT m.*
+        FROM
+        roles r INNER JOIN role_menu_relation rm ON r.id = rm.role_id
+        INNER JOIN menu m ON m.id = rm.menu_id
+        WHERE
+        m.parent_id = -1 AND r.id IN
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <!--    根据pid查询子菜单-->
+    <select id="findSubMenuByPid" parameterType="int" resultType="com.uyun.domain.Menu">
+        select *
+        from menu
+        where parent_id = #{pid}
+    </select>
+
+    <!--    获取用户拥有的资源权限信息-->
+    <select id="findResourceByRoleId" resultType="com.uyun.domain.Resource" parameterType="java.util.List">
+        select distinct r.*
+        from resource r
+        inner join role_resource_relation rr on r.id = rr.resource_id
+        inner join roles ro on ro.id = rr.role_id
+        where ro.id in
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+</mapper>

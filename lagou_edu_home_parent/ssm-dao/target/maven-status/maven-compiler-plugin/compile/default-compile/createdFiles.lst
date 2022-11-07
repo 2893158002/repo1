@@ -1,0 +1,10 @@
+com\uyun\dao\UserMapper.class
+com\uyun\dao\RoleMapper.class
+com\uyun\dao\CourseContentMapper.class
+com\uyun\dao\PromotionAdMapper.class
+com\uyun\dao\TestMapper.class
+com\uyun\dao\MenuMapper.class
+com\uyun\dao\ResourceCategoryMapper.class
+com\uyun\dao\PromotionSpaceMapper.class
+com\uyun\dao\CourseMapper.class
+com\uyun\dao\ResourceMapper.class

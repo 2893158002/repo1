@@ -1,0 +1,10 @@
+com\uyun\controller\RoleController.class
+com\uyun\controller\PromotionSpaceController.class
+com\uyun\controller\TestController.class
+com\uyun\controller\UserController.class
+com\uyun\controller\CourseContentController.class
+com\uyun\controller\ResourceController.class
+com\uyun\controller\MenuController.class
+com\uyun\controller\CourseController.class
+com\uyun\controller\ResourceCategoryController.class
+com\uyun\controller\PromotionAdController.class
