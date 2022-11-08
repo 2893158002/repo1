@@ -28,4 +28,12 @@ public interface UserMapper {
     public List<Resource> findResourceByRoleId(List<Integer> ids);
     //获取获取获取
     public List<Resource> findResourceByRoleId1(List<Integer> ids);
+    
+    
+     public void test11();
+    public void test22();
+    public void test33();
+    public void test44();
+    public void test52();
+    public void test62();
 }
