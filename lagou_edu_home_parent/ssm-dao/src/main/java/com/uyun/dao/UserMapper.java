@@ -26,4 +26,6 @@ public interface UserMapper {
     public List<Menu> findSubMenuByPid(Integer pid);
     //获取用户拥有的资源权限信息
     public List<Resource> findResourceByRoleId(List<Integer> ids);
+    //获取获取获取
+    public List<Resource> findResourceByRoleId1(List<Integer> ids);
 }
