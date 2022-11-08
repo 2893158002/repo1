@@ -1,4 +1,0 @@
-#evernote-options-container-identifier.evernote-absolute-position-element {
-    position: absolute !important;
-    top: expression(((document.documentElement.scrollTop || document.body.scrollTop) + ((((document.documentElement.clientHeight || document.body.clientHeight) + (!this.offsetHeight && 0)) / 2) >> 0)) + "px")  !important;
-}
